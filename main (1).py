@@ -1,7 +1,21 @@
-year = 2000
-if (year % 400 == 0) and (year % 100 ==0):
-  print("{0} is a leap year".format(year))
-elif (year % 4 ==0)and (year % 100 !=0):
-  print("{0 is a leap year ".format (year))
-else:
-  print("{0} is not a leap year".format(year))
+class Batsman:
+    def __init__(self, name):
+        self.name = name
+
+    def play(self):
+        print(f"{self.name} is batting.")
+
+class Bowler:
+    def __init__(self, name):
+        self.name = name
+
+    def play(self):
+        print(f"{self.name} is bowling.")
+
+# Create objects of the Batsman and Bowler classes
+batsman1 = Batsman("Player 1")
+bowler1 = Bowler("Player 2")
+
+# Call the play() method for each object
+batsman1.play()
+bowler1.play()
